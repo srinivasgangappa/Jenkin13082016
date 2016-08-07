@@ -19,6 +19,10 @@ public class JenkinTest
 	c.setBrowserName("chrome");
 	c.setPlatform(Platform.WINDOWS);
 	WebDriver driver = new RemoteWebDriver(remoteaddress,c);
+	DesiredCapabilities d= new DesiredCapabilities();
+	d.setBrowserName("firefox");
+	d.setPlatform(Platform.WINDOWS);
+	new RemoteWebDriver(remoteaddress,d);
 	driver.get("http://www.google.com/");
 	}
 }
