@@ -27,7 +27,7 @@ public class JenkinTest
 	new RemoteWebDriver(remoteaddress,d);
 	driver.get("http://www.google.com/");*/
 		
-	Assert.fail();
+	
 		
 		
 	}
