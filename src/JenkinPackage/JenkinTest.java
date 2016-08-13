@@ -30,6 +30,7 @@ public class JenkinTest
 	@Test
 	public void Jenkins1()
 	{
+		
 		Assert.fail();
 	}
 		
