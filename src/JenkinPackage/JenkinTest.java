@@ -26,16 +26,11 @@ public class JenkinTest
 	d.setPlatform(Platform.WINDOWS);
 	new RemoteWebDriver(remoteaddress,d);
 	driver.get("http://www.google.com/");*/
-	
+	}
 	@Test
 	public void Jenkins1()
 	{
 		
 		Assert.fail();
-	}
-		
-	
-		
-		
 	}
 }
