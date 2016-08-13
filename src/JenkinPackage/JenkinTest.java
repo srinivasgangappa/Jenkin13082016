@@ -10,6 +10,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class JenkinTest 
 {
@@ -26,6 +29,12 @@ public class JenkinTest
 	d.setPlatform(Platform.WINDOWS);
 	new RemoteWebDriver(remoteaddress,d);
 	driver.get("http://www.google.com/");*/
+	ExtentReports e = new ExtentReports("./extentreport.html");
+	
+	ExtentTest et = e.startTest("testA()");
+	et.log(LogStatus.PASS, "Hi Bi");
+	e.endTest(et);
+	e.flush();
 	}
 	@Test
 	public void Jenkins1()
