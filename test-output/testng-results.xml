@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14159" started-at="2016-08-07T13:22:42Z" finished-at="2016-08-07T13:22:56Z">
+  <suite name="Default suite" duration-ms="19852" started-at="2016-08-13T09:58:58Z" finished-at="2016-08-13T09:59:18Z">
     <groups>
     </groups>
-    <test name="CC" duration-ms="14159" started-at="2016-08-07T13:22:42Z" finished-at="2016-08-07T13:22:56Z">
+    <test name="Default test" duration-ms="19852" started-at="2016-08-13T09:58:58Z" finished-at="2016-08-13T09:59:18Z">
       <class name="JenkinPackage.JenkinTest">
-        <test-method status="PASS" signature="jenkinTestMethod()[pri:0, instance:JenkinPackage.JenkinTest@27082746]" name="jenkinTestMethod" duration-ms="14132" started-at="2016-08-07T18:52:42Z" finished-at="2016-08-07T18:52:56Z">
+        <test-method status="PASS" signature="Jenkins()[pri:0, instance:JenkinPackage.JenkinTest@26653222]" name="Jenkins" duration-ms="19817" started-at="2016-08-13T15:28:58Z" finished-at="2016-08-13T15:29:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jenkinTestMethod -->
+        </test-method> <!-- Jenkins -->
       </class> <!-- JenkinPackage.JenkinTest -->
-    </test> <!-- CC -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

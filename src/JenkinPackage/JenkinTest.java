@@ -28,6 +28,7 @@ public class JenkinTest
 		
 	WebDriver driver = new FirefoxDriver();
 			driver.get("http://www.google.com/");
+			driver.close();
 		
 		
 	}
