@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
 public class JenkinTest 
 {
@@ -26,9 +27,7 @@ public class JenkinTest
 	new RemoteWebDriver(remoteaddress,d);
 	driver.get("http://www.google.com/");*/
 		
-	WebDriver driver = new FirefoxDriver();
-			driver.get("http://www.google.com/");
-			driver.close();
+	Assert.fail();
 		
 		
 	}
