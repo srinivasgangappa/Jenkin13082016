@@ -16,30 +16,27 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class JenkinTest 
 {
-	@Test
-	public void Jenkins() throws MalformedURLException
-	{
-	/*URL remoteaddress = new URL("http://10.10.4.179:4444/wd/hub");
-	DesiredCapabilities c= new DesiredCapabilities();
-	c.setBrowserName("chrome");
-	c.setPlatform(Platform.WINDOWS);
-	WebDriver driver = new RemoteWebDriver(remoteaddress,c);
-	DesiredCapabilities d= new DesiredCapabilities();
-	d.setBrowserName("firefox");
-	d.setPlatform(Platform.WINDOWS);
-	new RemoteWebDriver(remoteaddress,d);
-	driver.get("http://www.google.com/");*/
-	ExtentReports e = new ExtentReports("./extentreport.html");
+	ExtentReports e = new ExtentReports("./ExtentReport/extentreport.html");
 	
-	ExtentTest et = e.startTest("testA()");
-	et.log(LogStatus.PASS, "Hi Bi");
-	e.endTest(et);
-	e.flush();
-	}
 	@Test
-	public void Jenkins1()
+	public void testA() throws MalformedURLException
+	{
+	ExtentTest et = e.startTest("hello");
+	et.log(LogStatus.PASS, "pass");
+	e.endTest(et);
+	}
+	
+	@Test
+	public void testB()
 	{
 		
-		Assert.fail();
+		 ExtentTest et=e.startTest("testB()");
+		
+		
+		  et.log(LogStatus.PASS, "pass");
+		  et.log(LogStatus.FAIL, "fail");
+		e.endTest(et);
+		
+		e.flush();
 	}
 }
